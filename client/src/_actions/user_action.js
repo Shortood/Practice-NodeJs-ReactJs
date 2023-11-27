@@ -1,9 +1,9 @@
 import axios from "axios";
 import { LOGIN_USER } from "./types";
 
-export function loginUser(dataTosubmit) {
+export function loginUser(dataToSubmit) {
   const request = axios
-    .post("/api/users/login", dataTosubmit)
+    .post("/api/users/login", dataToSubmit)
     .then((response) => response.data);
 
   return {
